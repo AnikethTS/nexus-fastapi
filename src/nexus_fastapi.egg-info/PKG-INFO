@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: nexus-fastapi
+Version: 0.1.0
+Summary: Scaffolding & plug-in framework that super-charges FastAPI projects
+Author-email: Meetkumar velani <meetvelani2728@gmail.com>, Axay Patoliya <axaypatoliya2222@gmail.com>
+Maintainer-email: Meetkumar velani <meetvelani2728@gmail.com>, Axay Patoliya <axaypatoliya2222@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/meetvelani/nexus-fastapi
+Project-URL: Documentation, https://github.com/meetvelani/nexus-fastapi#readme
+Project-URL: Repository, https://github.com/meetvelani/nexus-fastapi.git
+Project-URL: Issues, https://github.com/meetvelani/nexus-fastapi/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: FastAPI
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Nexus-FastAPI 🚀
+
+**Nexus-FastAPI** is a developer-friendly micro-framework that layers project scaffolding, plug-in hooks, and opinionated best-practices on top of [FastAPI].
+
+## ✨ Why Nexus?
+
+| Feature | Benefit |
+|---------|---------|
+| **`nexus new` CLI** | Bootstrap a production-ready FastAPI project in seconds |
+| **Pluggable hooks** | Add auth, DB, or observability modules without touching core code |
+| **Zero magic** | Pure FastAPI under the hood—no hidden globals |
+| **Extensible templates** | Ship your own scaffold via PRs or a private repo |
+
+## 🚀 Quick start
+
+```bash
+pip install nexus-fastapi
+nexus new awesome_api           # creates a ready-to-run project
+cd awesome_api
+uvicorn app.main:app --reload    # boom! 🎉

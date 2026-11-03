@@ -1,0 +1,9 @@
+
+---
+
+### Next actions
+
+1. **Search & replace** any lingering `foldergen` references in your code/tests.  
+2. Commit the updated `pyproject.toml`, `README.md`, and package files.
+3. Tag `v0.1.0` → push → publish to TestPyPI, then real PyPI when satisfied.
+4. Invite collaborators—thanks to the hook system, they can add features without forking the core. Enjoy building **Nexus-FastAPI**!

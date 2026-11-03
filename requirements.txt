@@ -1,0 +1,15 @@
+# Build and distribution
+build>=1.0.3
+twine>=4.0.2
+hatchling>=1.18.0
+
+# Development tools
+black>=23.11.0
+isort>=5.12.0
+flake8>=6.1.0
+pytest>=7.4.3
+pytest-cov>=4.1.0
+
+# Documentation
+mkdocs>=1.5.3
+mkdocs-material>=9.4.14 

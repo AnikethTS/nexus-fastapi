@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/nexus_fastapi/__init__.py
+src/nexus_fastapi/cli.py
+src/nexus_fastapi/hooks.py
+src/nexus_fastapi/scaffolds.py
+src/nexus_fastapi.egg-info/PKG-INFO
+src/nexus_fastapi.egg-info/SOURCES.txt
+src/nexus_fastapi.egg-info/dependency_links.txt
+src/nexus_fastapi.egg-info/entry_points.txt
+src/nexus_fastapi.egg-info/top_level.txt
+tests/test_smoke.py
