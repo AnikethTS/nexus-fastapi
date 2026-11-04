@@ -1,3 +1,4 @@
+from __future__ import annotations
 from pathlib import Path
 import json
 from typing import Dict, List, Any, Optional
@@ -11,7 +12,7 @@ DEFAULT_LAYOUT = {
 }
 
 class FastAPIGenerator:
-    def __init__(self, project_name: str, config: Optional[Dict[str, Any]] = None):
+    def __init__(self, project_name: str, config: Optional[Dict[str, Any]] = None, root: str | Path | None = None):
         self.project_name = project_name
         self.config = config or {
             "project_name": project_name,
@@ -19,7 +20,7 @@ class FastAPIGenerator:
             "version": "1.0.0",
             "apps": []
         }
-        self.base_path = Path(project_name)
+        self.base_path = Path(root).expanduser() if root is not None else Path(project_name)
         
     def create_directory_structure(self):
         """Create the basic directory structure"""
@@ -516,7 +517,7 @@ if __name__ == "__main__":
 
 def create_project(root: str | Path, template: str = "default", project_name: str = "service", config: Optional[Dict[str, Any]] = None):
     """Create a new FastAPI project with the specified template."""
-    generator = FastAPIGenerator(project_name=project_name, config=config)
+    generator = FastAPIGenerator(project_name=project_name, config=config, root=root)
     generator.generate_project()
     return Path(root).expanduser().resolve()
 
