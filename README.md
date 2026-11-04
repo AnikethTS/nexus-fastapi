@@ -122,7 +122,7 @@ my_app/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/meetvelani/nexus-fastapi.git
+   git clone https://github.com/AxayPatoliya/nexus-fastapi.git
    cd nexus-fastapi
    ```
 
@@ -173,6 +173,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <a href="https://github.com/AxayPatoliya">
   <img src="https://github.com/AxayPatoliya.png" width="100" alt="Axay Patoliya" style="border-radius: 50%;" /><br />
   <sub><b>Axay Patoliya</b></sub>
+</a>
+<a href="https://github.com/AnikethTS">
+  <img src="https://github.com/AnikethTS.png" width="100" alt="Aniketh T S" style="border-radius: 50%;" /><br />
+  <sub><b>Aniketh T S</b></sub>
 </a>
 
 ## Acknowledgments

@@ -17,11 +17,13 @@ build-backend = "hatchling.build"
 name = "nexus-fastapi"
 version = "0.1.0"
 authors = [
-    { name = "Meetkumar velani", email = "meetvelani2728@gmail.com" },
-    { name = "Axay Patoliya", email = "axaypatoliya2222@gmail.com" }
+    { name = "Axay Patoliya", email = "axaypatoliya2222@gmail.com" },
+    { name = "Aniketh TS", email = "anikethtsts@gmail.com" }
 ]
 description = "A FastAPI project generator and framework"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -58,7 +60,7 @@ nexus-fastapi = "nexus_fastapi.cli:main"
 packages = ["src/nexus_fastapi"]
 
 [project.urls]
-Homepage = "https://github.com/meetvelani/nexus-fastapi"
-Documentation = "https://github.com/meetvelani/nexus-fastapi#readme"
-Repository = "https://github.com/meetvelani/nexus-fastapi.git"
-Issues = "https://github.com/meetvelani/nexus-fastapi/issues"
+Homepage = "https://github.com/AxayPatoliya/nexus-fastapi"
+Documentation = "https://github.com/AxayPatoliya/nexus-fastapi#readme"
+Repository = "https://github.com/AxayPatoliya/nexus-fastapi.git"
+Issues = "https://github.com/AxayPatoliya/nexus-fastapi/issues"
