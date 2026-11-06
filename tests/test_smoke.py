@@ -165,6 +165,18 @@ def test_generated_app_boots_and_serves_crud(tmp_path):
         "r = c.post('/api/things/', json={'a_string': 'x', 'an_int': 1})\n"
         "assert r.status_code == 200, r.text\n"
         "assert c.get('/api/things/').json()[0]['a_string'] == 'x'\n"
+        "id_ = r.json()['id']\n"
+        "r = c.get(f'/api/things/{id_}')\n"
+        "assert r.status_code == 200, r.text\n"
+        "assert r.json()['a_string'] == 'x'\n"
+        "r = c.put(f'/api/things/{id_}', json={'a_string': 'y'})\n"
+        "assert r.status_code == 200, r.text\n"
+        "r = c.get(f'/api/things/{id_}')\n"
+        "assert r.status_code == 200, r.text\n"
+        "assert r.json()['a_string'] == 'y'\n"
+        "r = c.delete(f'/api/things/{id_}')\n"
+        "assert r.status_code == 200, r.text\n"
+        "assert c.get(f'/api/things/{id_}').status_code == 404\n"
     )
     result = subprocess.run(
         [sys.executable, "-W", "ignore", "-c", script],
